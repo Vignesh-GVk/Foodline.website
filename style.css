@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+}
+
+.section1 {
+    background-color: hsl(171, 28%, 90%);
+    justify-content: center;
+    height: 450px;
+
+}
+
+.section2 {
+    align-items: center;
+    height: 330px;
+}
+
+.img1 {
+    position: relative;
+}
+
+.span1 {
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+    top: 30px;
+    left: 40px;
+    width: 50px;
+    justify-content: center;
+    padding: 1px 38px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+}
+
+.span1::after {
+    content: "";
+    width: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s linear;
+    color: white;
+}
+
+.span1:hover::after {
+    width: 100%;
+    background: radial-gradient(hwb(127 92% 4%), violet, hsl(174, 91%, 45%), rgb(191, 88, 29), red);
+    z-index: -2;
+}
+
+.section3 {
+    background-color: hsl(185, 28%, 90%);
+    height: 600px;
+
+}
+
+.section4 {
+    height: 200px;
+    position: relative;
+}
+
+.section5 {
+    height: 300px;
+    background-color: hsl(179, 30%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section7 {
+    height: 100px;
+    background-color: hsl(171, 28%, 92%);
+    display: flex;
+}
+
+.span2 {
+    position: absolute;
+    top: 210px;
+    left: 150px;
+    background-color: aliceblue;
+    width: 50px;
+    justify-content: center;
+    padding: 3px 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .search {
+        display: block;
+        width: 700px;
+    }
+
+    .section1 {
+        height: auto;
+    }
+
+    .section11 {
+        width: 290px;
+    }
+
+    .pp {
+        font-size: 14px;
+    }
+
+    .car {
+        width: 60%;
+    }
+
+    .section2 {
+        text-align: center;
+        height: auto;
+    }
+
+    .img1 {
+        margin-top: 25px;
+    }
+
+    .section3 {
+        text-align: center;
+        background-color: white;
+        height: auto;
+
+    }
+
+    .section4 {
+        height: auto;
+    }
+
+    .section5 {
+        text-align: center;
+        height: auto;
+    }
+
+    .main {
+        text-align: left;
+    }
+
+    .card {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .ppp {
+        font-size: 13px;
+    }
+
+    .foot {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}

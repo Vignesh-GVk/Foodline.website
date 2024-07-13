@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>FOOD LINE-Online Food Ordering</title>
+  <link rel="shortcut icon" href="foodicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " style="font-size: 13px;">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="foodicon.png" alt="s" width="60px" height="60px"> <a
+            class="navbar-brand" href="#" class="logo">FOOD LINE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <img src="percentage.png" alt="b" height="19px">Offers<span
+                    class="badge bg-danger" id="logo"
+                    style="height: 15px; width: 30px; font-size: 9px; padding-right: 10px;">NEW</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Restaurant
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Listing</a></li>
+                  <li><a class="dropdown-item" href="#">Detail + cart</a></li>
+                  <li><a class="dropdown-item" href="#">checkout</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Track order</a></li>
+                  <li><a class="dropdown-item" href="#">Invoice</a></li>
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                  <li><a class="dropdown-item" href="#">404</a></li>
+                  <li><a class="dropdown-item" href="#">Extra:)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Oredrs</a></li>
+                  <li><a class="dropdown-item" href="#">Offers</a></li>
+                  <li><a class="dropdown-item" href="#">Favourites</a></li>
+                  <li><a class="dropdown-item" href="#">Payments</a></li>
+                  <li><a class="dropdown-item" href="#">Addresses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Cart
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Oredrs</a></li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 mt-4">
+          <h1 style="font-weight: bold;">Find Awesome Deals <span
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">in
+              India</span></h1>
+          <p style="color: #7088A9;font-size: 20px;">Lists Of Top restaurants,cafes,Pubs and bars in Chennai, based on
+            trends</p><br><br>
+          <div class="search">
+            <select class="form-select forms" aria-label="Default select example" style="width: 22%; font-size: 15px;">
+              <option value="1">Quick searches</option>
+              <option value="2">Breakfast</option>
+              <option value="3">Lunch</option>
+              <option value="3">Dinner</option>
+              <option value="3">Delivery</option>
+            </select>
+            <div class="section11">
+              <form class="d-flex ">
+                <input class="form-control me-1" type="search" placeholder="Enter Your Delivery Location"
+                  aria-label="Search" style="width:230px ; font-size: 13px">
+                <button class="btn btn-outline-success" type="submit"
+                  style="background-color:#FF3008; color: white; border-color:#FF3008 ;">Search</button>
+              </form>
+            </div>
+          </div><br>
+          <p class="pp">E.g. Beverages, Pizzas, Chinese, Bakery, indian...</p>
+          <marquee behavior="scroll" direction="left">
+            <img src="food.jpg" alt="v" width="90px" height="120px">
+            <img src="foodie1.webp" alt="v" width="90px" height="120px">
+            <img src="foodie2.webp" alt="v" width="90px" height="120px">
+            <img src="foodie3.webp" alt="v" width="90px" height="120px">
+            <img src="foodie4.webp" alt="v" width="90px" height="120px">
+            <img src="foodie5.webp" alt="v" width="90px" height="120px">
+            <img src="foodie7.webp" alt="v" width="90px" height="120px">
+            <img src="foodoffer3.avif" alt="v" width="90px" height="120px">
+            <img src="foodoffer4.avif" alt="v" width="90px" height="120px">
+          </marquee>
+        </div>
+        <div class="col-sm-4 mt-3 car">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner mt-4">
+              <div class="carousel-item active">
+                <img src="foodoffer5.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="foodoffer2.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="foodoffer4.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section2 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="img1">
+            <span class="span1">Offer</span>
+            <img src="foodoffer1.avif" alt="v" style="height: 280px; width: 250px;">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="img1">
+            <span class="span1">Discover</span>
+            <img src="foodoffer2.avif" alt="v" style="height: 280px; width: 250px;">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="img1">
+            <span class="span1">Trynow</span>
+            <img src="foodoffer5.avif" alt="v" style="height: 280px; width: 250px;">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="img1">
+            <span class="span1">Explore</span>
+            <img src="foodoffer4.avif" alt="v" style="height: 280px; width: 250px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-4 ">
+          <h3 style="text-align: center;color: black; font-weight: bold;">Popular Brands</h3>
+          <div class="hr">
+            <hr>
+          </div>
+          <p style="color: #7088A9; text-align: center;">Top restaurants,cafes,pubs, and in Ludhiana, based on trends
+          </p>
+        </div>
+      </div>
+      <div class="row mt-3 cat">
+        <div class="col-md-3 cardss">
+          <div class="card">
+            <span class="span1"
+              style="background-color:rgb(98, 93, 93) ; color: #0b0a0a; font-size: 15px;">promoted</span>
+            <span class="span2"
+              style="background-color: rgb(119, 195, 243); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+            <img src="foodoffer5.avif" class="card-img-top" alt="y">
+            <div class="card-body">
+              <h5>World famous</h5>
+              <p>North indian *American Burgur </p>
+              <h7><i class="fa-regular fa-clock"></i>20-25</h7><br>
+              <span class="badge bg-danger" id="logo" style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+              <span style="font-size: 13px;">70% off | use coupen vignesh34</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 cardss">
+          <div class="card">
+            <span class="span1"
+              style="background-color: rgb(120, 120, 164); color: #0a0808;font-size: 15px; ">promoted</span>
+            <span class="span2"
+              style="background-color: rgb(233, 179, 91); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+            <img src="foodoffer6.avif" class="card-img-top" alt="i">
+            <div class="card-body">
+              <h5>Food world</h5>
+              <p>North indian *chinies veg </p>
+              <h7><i class="fa-regular fa-clock"></i>25-30</h7><br>
+              <span class="badge bg-danger" id="logo" style="height: 15px; width: 30px; font-size: 9px; ">Offer </span>
+              <span style="font-size: 13px;">80% off | use coupen vignesh14</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 cardss">
+          <div class="card">
+            <div class="cardd">
+              <span class="span1"
+                style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+              <span class="span2"
+                style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+              <img src="foodoffer7.avif" class="card-img-top" alt="o">
+            </div>
+            <div class="card-body">
+              <h5>Foodie Street</h5>
+              <p>North indian *Corean pizza </p>
+              <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+              <span class="badge bg-danger" id="logo" style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+              <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 cardss">
+          <div class="card">
+            <span class="span1"
+              style="background-color: rgb(198, 155, 238); color: #080606; font-size: 15px;">promoted</span>
+            <span class="span2"
+              style="background-color: #7de493; color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+            <img src="foodoffer2.avif" class="card-img-top" alt="r">
+            <div class="card-body">
+              <h5>Foodies</h5>
+              <p>North indian *Africa Biriyani </p>
+              <h7><i class="fa-regular fa-clock"></i>25-40</h7><br>
+              <span class="badge bg-danger" id="logo" style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+              <span style="font-size: 13px;">50% off | use coupen vignesh24</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section4">
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Become a Member</h3>
+          <p>sweet and tasty</p>
+          <button style="background-color:hsl(120, 84%, 37%); border-color: #07ad3c;" type="button"
+            class="btn btn-lg btn-primary" disabled>Create an Account</button>
+          <hr><br>
+          <p style="font-weight:bolder;text-align: center; font-size: 17px;">Operate food Store Or restaurants?<span
+              style="color: #FF3008;" class="gvk">work with us</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section5 mt-4">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-sm-6">
+          <h6> SUBSCRIBE TO OUR NEWSLETTER</h6>
+          <form class="d-flex">
+            <input class="form-control me-1 search1 " type="search" placeholder="Please enter your email"
+              aria-label="Search" style="font-size: 11px;">
+            <button class="btn btn-outline-success search2" type="submit"
+              style="background-color:#FF3008; color: white; border-color:#FF3008 ;">subscribe</button>
+          </form>
+          <p class="ppp"><a href="#" style="text-decoration: none;">Register now </a>to get updates on <a href="#"
+              style="text-decoration: none; color: #FF3008;">offers and coupens</a></p>
+          <p>DOWNLOAD APP </p>
+          <img src="google play1.png" alt="v" width="124px">
+          <img src="apple.png" alt="background-color" width="120px">
+        </div>
+        <div class="col-sm-2 main">
+          <h5>ABOUT OE</h5>
+          <p style="color: #6C8BB9;">About Us</p>
+          <p style="color: #6C8BB9;">Culture</p>
+          <p style="color: #6C8BB9;">Blog</p>
+          <p style="color: #6C8BB9;">Careers</p>
+          <p style="color: #6C8BB9;">Contact</p>
+        </div>
+        <div class="col-sm-2 main">
+          <h5>FOR FOODIES</h5>
+          <p style="color: #6C8BB9;">Community</p>
+          <p style="color: #6C8BB9;">Developers</p>
+          <p style="color: #6C8BB9;">Blogger help</p>
+          <p style="color: #6C8BB9;">Verified users</p>
+          <p style="color: #6C8BB9;">Code of Conduct</p>
+        </div>
+        <div class="col-sm-2 main">
+          <h5>RESTAURAUNTS</h5>
+          <p style="color: #6C8BB9;">Advertise</p>
+          <p style="color: #6C8BB9;">Add a Restaurant</p>
+          <p style="color: #6C8BB9;">Claim your Listing </p>
+          <p style="color: #6C8BB9;">For Businesses</p>
+          <p style="color: #6C8BB9;">Owner Guidlines</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section6">
+    <div class="container foot">
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-12 mt-5" style="text-transform: capitalize;">
+            <h7>POPULAR COUNTRIES</h7>
+            <p style="font-size: 13px;"> australia | brasil | canada | chile | czech republic | india | ireland | new
+              zeland | united kingdom | turkey | phillipines | srilanka | corea | australia | brasil | canada | chile |
+              czech republic
+              india | ireland | new zeland | united kingdom | turkey | phillipines | srilanka | corea | australia |
+              brasil | canada | chile | czech republic | india | ireland | new zeland | united kingdom | turkey
+              phillipines | srilanka | corea | australia | brasil | canada | chile | czech republic | india | ireland |
+              new zeland | united kingdom | turkey | phillipines | srilanka | corea </p>
+            <h7>POPULAR FOOD</h7>
+            <p style="font-size: 13px;">australia | brasil | canada | chile | czech republic | india | ireland | new
+              zeland | united kingdom | turkey | phillipines | srilanka | corea | australia | brasil | canada | chile |
+              czech republic
+              india | ireland | new zeland | united kingdom | turkey | phillipines | srilanka | corea | australia |
+              brasil | canada | chile | czech republic | india | ireland | new zeland | united kingdom | turkey
+              phillipines | srilanka | corea | australia | brasil | canada | chile | czech republic | india | ireland |
+              new zeland | united kingdom | turkey | phillipines | srilanka | corea</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section7 mt-5">
+    <div class="container text-center mt-5">
+      <div class="footer">
+        <div class="footertext">
+          <p style="font-size: 12px; ">&copy;copyright 2023 Food Line. All Rights Reserved</p>
+        </div>
+
+        <h6 style="font-size: 11px;">Made With &#x1F9E1; by <span style="color: red; font-size: 11px;">Vignesh - Ask
+            Bootstrap</span></h6>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
